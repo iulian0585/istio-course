@@ -1,3 +1,22 @@
+**/*-params.json
+.vscode
+# Python bytecode.
+*.pyc
+*.pyo
+
+.idea
+
+.terraform
+
+.idea/*
+.DS_Store
+
+*.retry
+
+.logs
+
+sensitive.tfvars
+
 /.metadata/
 target/
 .recommenders/

@@ -22,7 +22,12 @@ kubectl port-forward -n istio-system svc/kiali 31000:20001
 kubectl port-forward -n istio-system svc/kiali 30148:9090
 # Jaeger-web
 kubectl port-forward -n istio-system svc/tracing 30101:80
-
+# Grafana-web
+kubectl port-forward -n istio-system svc/grafana 31002:3000
+# Prometheus-web
+kubectl port-forward -n istio-system svc/prometheus 31002:3000
+# Istio-ingress-gateway
+kubectl port-forward -n istio-system svc/stio-ingressgateway 31380:80
 
 kubectl rollout restart deployment istiod -n istio-system
 
